@@ -12,7 +12,7 @@ for line in f:
         cur.execute("INSERT INTO SZ000839(symbol,_date,_open,high,low,_close,volume) VALUES ('%s','%s','%s','%s','%s','%s','%s')" % tuple(data))
 
 conn.commit()# Commit the transaction
-f.close() # Don't forget to close all of these
+f.close() # Don't forget to close all of these sources
 cur.close()
 conn.close()
 print('finished!')

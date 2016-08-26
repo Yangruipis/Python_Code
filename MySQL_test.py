@@ -1,5 +1,5 @@
 import pymysql
-f = open(r'D:\Data\SZ000839.csv')# load the csv
+f = open(r'D:\Data\SZ000839.csv')# Load the csv
 header = True
 conn = pymysql.connect('localhost','root','password','database')
 cur = conn.cursor()
